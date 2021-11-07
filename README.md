@@ -1,7 +1,7 @@
 # Blood-Bank-Management-System
  A Simple Blood-Bank-Management-System
  
- Cridentials
+# Cridentials
  
  Username= admin
  
