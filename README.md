@@ -1,6 +1,9 @@
 # Blood-Bank-Management-System
  A Simple Blood-Bank-Management-System
  
+ A C# Project WIthout DataBase
+ 
+ 
 # Cridentials
  
  Username= admin
