@@ -43,8 +43,8 @@ namespace Blood_Bank_Management_System
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            lbltime.Text = DateTime.Now.ToLongTimeString();
-            lbldate.Text = DateTime.Now.ToLongDateString();
+            timer1.Start();
+            
         }
 
         private void btnSAVE_Click(object sender, EventArgs e)
@@ -72,6 +72,12 @@ namespace Blood_Bank_Management_System
         private void comboBoxselectblood_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbltime.Text = DateTime.Now.ToLongTimeString();
+            lbldate.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

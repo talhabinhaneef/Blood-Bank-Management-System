@@ -36,6 +36,8 @@ namespace Blood_Bank_Management_System
                 this.Hide();
                 Form2 dash = new Form2();  
                 dash.ShowDialog();
+                dash = null;
+                this.Show();
             }
             else
             {

@@ -29,6 +29,7 @@ namespace Blood_Bank_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.piclogo = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,7 @@ namespace Blood_Bank_Management_System
             this.lbldate = new System.Windows.Forms.Label();
             this.comboBoxage = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.piclogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,6 +148,7 @@ namespace Blood_Bank_Management_System
             // comboBoxselectblood
             // 
             this.comboBoxselectblood.BackColor = System.Drawing.Color.Pink;
+            this.comboBoxselectblood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxselectblood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxselectblood.ForeColor = System.Drawing.Color.Maroon;
             this.comboBoxselectblood.FormattingEnabled = true;
@@ -246,6 +249,7 @@ namespace Blood_Bank_Management_System
             // comboBoxduration
             // 
             this.comboBoxduration.BackColor = System.Drawing.Color.Pink;
+            this.comboBoxduration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxduration.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxduration.ForeColor = System.Drawing.Color.Maroon;
             this.comboBoxduration.FormattingEnabled = true;
@@ -359,6 +363,7 @@ namespace Blood_Bank_Management_System
             // comboBoxage
             // 
             this.comboBoxage.BackColor = System.Drawing.Color.Pink;
+            this.comboBoxage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxage.ForeColor = System.Drawing.Color.Maroon;
             this.comboBoxage.FormattingEnabled = true;
@@ -386,6 +391,11 @@ namespace Blood_Bank_Management_System
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form2
             // 
@@ -458,5 +468,6 @@ namespace Blood_Bank_Management_System
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.ComboBox comboBoxage;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Timer timer1;
     }
 }
