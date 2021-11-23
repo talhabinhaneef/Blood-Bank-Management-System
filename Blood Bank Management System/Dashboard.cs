@@ -8,22 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using System.Data.OleDb;
 
 namespace Blood_Bank_Management_System
 {
     public partial class Form2 : Form
     {
-        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\BS.IT\5th Semester\VP Project\Database\DataBackup.mdb");
-
         public Form2()
         {
             InitializeComponent();
-
-
-           
-
-
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -45,29 +37,6 @@ namespace Blood_Bank_Management_System
         {
             lbltime.Text = DateTime.Now.ToLongTimeString();
             lbldate.Text = DateTime.Now.ToLongDateString();
-        }
-
-        private void btnSAVE_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form3 f3 = new Form3();
-            f3.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            con.Open();
-            OleDbCommand cmd = new OleDbCommand("INSERT into DONOR (Names,phone,age,address,L_donation,Blood_g) values ('"+ txtboxname.Text+ "','" + txtboxphone.Text + "','" + comboBoxage.Text + "','" + txtboxaddress.Text + "','" + comboBoxduration.Text + "','" + comboBoxselectblood.Text + "')", con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show(" Successful ");
-
-
-        }
-
-        private void comboBoxselectblood_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

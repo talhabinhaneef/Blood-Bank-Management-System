@@ -55,7 +55,6 @@ namespace Blood_Bank_Management_System
             this.lbltime = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
             this.comboBoxage = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.piclogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,7 +162,6 @@ namespace Blood_Bank_Management_System
             this.comboBoxselectblood.Size = new System.Drawing.Size(189, 32);
             this.comboBoxselectblood.TabIndex = 17;
             this.comboBoxselectblood.Text = "Select Blood Group";
-            this.comboBoxselectblood.SelectedIndexChanged += new System.EventHandler(this.comboBoxselectblood_SelectedIndexChanged);
             // 
             // txtDonorid
             // 
@@ -277,16 +275,15 @@ namespace Blood_Bank_Management_System
             // 
             // btnSAVE
             // 
-            this.btnSAVE.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSAVE.BackColor = System.Drawing.Color.ForestGreen;
             this.btnSAVE.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSAVE.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSAVE.Location = new System.Drawing.Point(246, 417);
+            this.btnSAVE.Location = new System.Drawing.Point(398, 406);
             this.btnSAVE.Name = "btnSAVE";
             this.btnSAVE.Size = new System.Drawing.Size(119, 32);
             this.btnSAVE.TabIndex = 27;
-            this.btnSAVE.Text = "DataBase";
+            this.btnSAVE.Text = "Save";
             this.btnSAVE.UseVisualStyleBackColor = false;
-            this.btnSAVE.Click += new System.EventHandler(this.btnSAVE_Click);
             // 
             // linkLabel1
             // 
@@ -374,26 +371,12 @@ namespace Blood_Bank_Management_System
             this.comboBoxage.TabIndex = 34;
             this.comboBoxage.Text = "Select Age";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(398, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 32);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(654, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxage);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lbltime);
@@ -457,6 +440,5 @@ namespace Blood_Bank_Management_System
         private System.Windows.Forms.Label lbltime;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.ComboBox comboBoxage;
-        private System.Windows.Forms.Button button1;
     }
 }
