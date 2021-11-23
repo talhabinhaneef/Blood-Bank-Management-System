@@ -57,7 +57,11 @@ namespace Blood_Bank_Management_System
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            OleDbCommand cmd = new OleDbCommand("INSERT into DONOR (Names,phone,age,address,L_donation,Blood_g) values ('"+ txtboxname.Text+ "','" + txtboxphone.Text + "','" + comboBoxage.Text + "','" + txtboxaddress.Text + "','" + comboBoxduration.Text + "','" + comboBoxselectblood.Text + "')", con);
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.Connection = con;
+           cmd.CommandText = "INSERT into [DONOR](Name1,phone,age,address,L_donation,Blood_g) Values ('" + txtboxname.Text + "','" + txtboxphone.Text + "','" + comboBoxage.Text + "','" + txtboxaddress.Text + "','" + comboBoxduration.Text + "','" + comboBoxselectblood.Text + "')";
+            //cmd.CommandText = "INSERT INTO [DONOR](Name1) Values ('"+ txtboxname.Text +"')";
+
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show(" Successful ");

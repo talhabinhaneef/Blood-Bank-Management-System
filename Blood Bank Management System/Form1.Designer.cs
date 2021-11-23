@@ -76,7 +76,7 @@ namespace Blood_Bank_Management_System
             this.txtboxusername.Name = "txtboxusername";
             this.txtboxusername.Size = new System.Drawing.Size(183, 29);
             this.txtboxusername.TabIndex = 2;
-            this.txtboxusername.Text = "Username";
+            this.txtboxusername.Text = "admin";
             this.txtboxusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtboxpassword
@@ -89,7 +89,7 @@ namespace Blood_Bank_Management_System
             this.txtboxpassword.PasswordChar = '*';
             this.txtboxpassword.Size = new System.Drawing.Size(183, 29);
             this.txtboxpassword.TabIndex = 3;
-            this.txtboxpassword.Text = "Password";
+            this.txtboxpassword.Text = "admin";
             this.txtboxpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnlogin
