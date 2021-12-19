@@ -34,7 +34,7 @@ namespace Blood_Bank_Management_System
             else if (txtboxpassword.Text == "admin" && txtboxusername.Text == "admin")
             {
                 this.Hide();
-                Form2 dash = new Form2();  
+                Select dash = new Select();  
                 dash.ShowDialog();
                 dash = null;
                 this.Show();

@@ -48,7 +48,6 @@ namespace Blood_Bank_Management_System
             this.txtbloodgroup = new System.Windows.Forms.Label();
             this.comboBoxduration = new System.Windows.Forms.ComboBox();
             this.btnEXIT = new System.Windows.Forms.Button();
-            this.btnSAVE = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -279,19 +278,6 @@ namespace Blood_Bank_Management_System
             this.btnEXIT.UseVisualStyleBackColor = false;
             this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
             // 
-            // btnSAVE
-            // 
-            this.btnSAVE.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSAVE.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSAVE.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSAVE.Location = new System.Drawing.Point(246, 417);
-            this.btnSAVE.Name = "btnSAVE";
-            this.btnSAVE.Size = new System.Drawing.Size(119, 32);
-            this.btnSAVE.TabIndex = 27;
-            this.btnSAVE.Text = "DataBase";
-            this.btnSAVE.UseVisualStyleBackColor = false;
-            this.btnSAVE.Click += new System.EventHandler(this.btnSAVE_Click);
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -411,7 +397,6 @@ namespace Blood_Bank_Management_System
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnSAVE);
             this.Controls.Add(this.btnEXIT);
             this.Controls.Add(this.comboBoxduration);
             this.Controls.Add(this.txtbloodgroup);
@@ -459,7 +444,6 @@ namespace Blood_Bank_Management_System
         private System.Windows.Forms.Label txtbloodgroup;
         private System.Windows.Forms.ComboBox comboBoxduration;
         private System.Windows.Forms.Button btnEXIT;
-        private System.Windows.Forms.Button btnSAVE;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

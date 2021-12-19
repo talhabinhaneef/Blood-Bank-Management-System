@@ -49,9 +49,7 @@ namespace Blood_Bank_Management_System
 
         private void btnSAVE_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3 f3 = new Form3();
-            f3.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
