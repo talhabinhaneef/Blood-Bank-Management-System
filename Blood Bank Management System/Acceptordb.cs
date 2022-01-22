@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,51 +12,25 @@ using System.Data.SqlClient;
 
 namespace Blood_Bank_Management_System
 {
-    public partial class Form3 : Form
+    public partial class Acceptordb : Form
     {
-
         SqlConnection conn = new SqlConnection(@"SERVER=admin.c8tiwocbpmxj.us-east-1.rds.amazonaws.com; USER ID=admin; PASSWORD=hkAkGmTLNuutqzy8ht6e; DATABASE=BLOODBANK;");
-        public Form3()
+
+        public Acceptordb()
         {
             InitializeComponent();
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
+
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELEcT * From DONOR", conn);   
+            SqlDataAdapter da = new SqlDataAdapter("SELEcT * From ACCEPTOR", conn);
+    
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
-
-
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void piclogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelname_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnEXIT_Click(object sender, EventArgs e)

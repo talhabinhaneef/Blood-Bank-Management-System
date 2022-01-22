@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace Blood_Bank_Management_System
 {
     public partial class Form1 : Form
     {
+        SqlConnection conn = new SqlConnection(@"SERVER=admin.c8tiwocbpmxj.us-east-1.rds.amazonaws.com; USER ID=admin; PASSWORD=hkAkGmTLNuutqzy8ht6e; DATABASE=BLOODBANK;");
+
         public Form1()
         {
             InitializeComponent();
@@ -27,21 +30,22 @@ namespace Blood_Bank_Management_System
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if (txtboxusername.Text.Trim() == "" && txtboxpassword.Text.Trim() == "")
-            {
-                MessageBox.Show(" Please Enter Username & Password ");
-            }
-            else if (txtboxpassword.Text == "admin" && txtboxusername.Text == "admin")
+            string username = txtboxusername.Text;
+            string password = txtboxpassword.Text;
+             string query = "SELECT * FROM dbo.login WHERE username='" + txtboxusername.Text.Trim() + "' AND Password='" + txtboxpassword.Text.Trim() + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            DataTable dtb = new DataTable();    
+            adapter.Fill(dtb);
+            if(dtb.Rows.Count ==1)
             {
                 this.Hide();
-                Select dash = new Select();  
-                dash.ShowDialog();
-                dash = null;
-                this.Show();
+                var Select = new Select();
+                Select.Show();
+
             }
             else
             {
-                MessageBox.Show(" Wrong Credentials, PLEASE! Enter Correct Details");
+                MessageBox.Show(" Wrong Uername OR Password");
             }
         }
 
@@ -63,6 +67,18 @@ namespace Blood_Bank_Management_System
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            regform reg = new regform();    
+            reg.Show();
         }
     }
 }

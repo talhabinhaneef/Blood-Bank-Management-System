@@ -40,6 +40,8 @@ namespace Blood_Bank_Management_System
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.piclogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LockPicture)).BeginInit();
             this.SuspendLayout();
@@ -48,11 +50,11 @@ namespace Blood_Bank_Management_System
             // 
             this.labelname.AutoSize = true;
             this.labelname.BackColor = System.Drawing.Color.Transparent;
-            this.labelname.Font = new System.Drawing.Font("Calisto MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelname.ForeColor = System.Drawing.Color.Crimson;
             this.labelname.Location = new System.Drawing.Point(12, 23);
             this.labelname.Name = "labelname";
-            this.labelname.Size = new System.Drawing.Size(423, 31);
+            this.labelname.Size = new System.Drawing.Size(450, 31);
             this.labelname.TabIndex = 0;
             this.labelname.Text = "Blood Bank Management System ";
             // 
@@ -70,9 +72,9 @@ namespace Blood_Bank_Management_System
             // txtboxusername
             // 
             this.txtboxusername.BackColor = System.Drawing.Color.Pink;
-            this.txtboxusername.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxusername.ForeColor = System.Drawing.Color.Maroon;
-            this.txtboxusername.Location = new System.Drawing.Point(133, 149);
+            this.txtboxusername.Location = new System.Drawing.Point(134, 178);
             this.txtboxusername.Name = "txtboxusername";
             this.txtboxusername.Size = new System.Drawing.Size(183, 29);
             this.txtboxusername.TabIndex = 2;
@@ -82,9 +84,9 @@ namespace Blood_Bank_Management_System
             // txtboxpassword
             // 
             this.txtboxpassword.BackColor = System.Drawing.Color.Pink;
-            this.txtboxpassword.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxpassword.ForeColor = System.Drawing.Color.Maroon;
-            this.txtboxpassword.Location = new System.Drawing.Point(133, 195);
+            this.txtboxpassword.Location = new System.Drawing.Point(134, 224);
             this.txtboxpassword.Name = "txtboxpassword";
             this.txtboxpassword.PasswordChar = '*';
             this.txtboxpassword.Size = new System.Drawing.Size(183, 29);
@@ -95,9 +97,9 @@ namespace Blood_Bank_Management_System
             // btnlogin
             // 
             this.btnlogin.BackColor = System.Drawing.Color.Crimson;
-            this.btnlogin.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(167, 230);
+            this.btnlogin.Location = new System.Drawing.Point(168, 259);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(119, 32);
             this.btnlogin.TabIndex = 4;
@@ -110,7 +112,7 @@ namespace Blood_Bank_Management_System
             this.btnForgetPassword.BackColor = System.Drawing.Color.PeachPuff;
             this.btnForgetPassword.ForeColor = System.Drawing.Color.DarkRed;
             this.btnForgetPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnForgetPassword.Location = new System.Drawing.Point(192, 300);
+            this.btnForgetPassword.Location = new System.Drawing.Point(192, 306);
             this.btnForgetPassword.Name = "btnForgetPassword";
             this.btnForgetPassword.Size = new System.Drawing.Size(94, 23);
             this.btnForgetPassword.TabIndex = 5;
@@ -122,7 +124,7 @@ namespace Blood_Bank_Management_System
             // LockPicture
             // 
             this.LockPicture.Image = ((System.Drawing.Image)(resources.GetObject("LockPicture.Image")));
-            this.LockPicture.Location = new System.Drawing.Point(167, 300);
+            this.LockPicture.Location = new System.Drawing.Point(167, 306);
             this.LockPicture.Name = "LockPicture";
             this.LockPicture.Size = new System.Drawing.Size(19, 23);
             this.LockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,11 +135,11 @@ namespace Blood_Bank_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(242, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 15);
+            this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Saving Lives . . .";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -146,11 +148,11 @@ namespace Blood_Bank_Management_System
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(102, 354);
+            this.label2.Location = new System.Drawing.Point(100, 378);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 22);
+            this.label2.Size = new System.Drawing.Size(146, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Developed By:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -161,7 +163,7 @@ namespace Blood_Bank_Management_System
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.ForeColor = System.Drawing.Color.Crimson;
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(244, 361);
+            this.linkLabel1.Location = new System.Drawing.Point(242, 385);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(90, 13);
             this.linkLabel1.TabIndex = 9;
@@ -169,12 +171,41 @@ namespace Blood_Bank_Management_System
             this.linkLabel1.Text = "Talha Bin Haneef";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(209, 348);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 32);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Register NOW";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Crimson;
+            this.label3.Location = new System.Drawing.Point(34, 351);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(177, 24);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Are You New User?";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(432, 376);
+            this.ClientSize = new System.Drawing.Size(454, 408);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelname);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -184,9 +215,9 @@ namespace Blood_Bank_Management_System
             this.Controls.Add(this.txtboxpassword);
             this.Controls.Add(this.txtboxusername);
             this.Controls.Add(this.piclogo);
-            this.Controls.Add(this.labelname);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blood Bank Management System ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.piclogo)).EndInit();
@@ -208,6 +239,8 @@ namespace Blood_Bank_Management_System
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

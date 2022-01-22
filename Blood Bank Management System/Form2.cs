@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using System.Data.OleDb;
-
+using System.Data.SqlClient;
 namespace Blood_Bank_Management_System
 {
     public partial class Form2 : Form
     {
-        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\BS.IT\5th Semester\VP Project\Database\DataBackup.mdb");
+        SqlConnection conn =new SqlConnection(@"SERVER=admin.c8tiwocbpmxj.us-east-1.rds.amazonaws.com; USER ID=admin; PASSWORD=hkAkGmTLNuutqzy8ht6e; DATABASE=BLOODBANK;");
 
         public Form2()
         {
@@ -54,14 +53,15 @@ namespace Blood_Bank_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con.Open();
-            OleDbCommand cmd = new OleDbCommand();
-            cmd.Connection = con;
-           cmd.CommandText = "INSERT into [DONOR](Name1,phone,age,address,L_donation,Blood_g) Values ('" + txtboxname.Text + "','" + txtboxphone.Text + "','" + comboBoxage.Text + "','" + txtboxaddress.Text + "','" + comboBoxduration.Text + "','" + comboBoxselectblood.Text + "')";
+            conn.Open();
+            
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+           cmd.CommandText = "INSERT into [DONOR](D_id,D_name,D_phone,D_age,D_add,D_last,D_Blood) Values ('" + txtid.Text + "','" + txtboxname.Text + "','" + txtboxphone.Text + "','" + comboBoxage.Text + "','" + txtboxaddress.Text + "','" + comboBoxduration.Text + "','" + comboBoxselectblood.Text + "')";
             //cmd.CommandText = "INSERT INTO [DONOR](Name1) Values ('"+ txtboxname.Text +"')";
 
             cmd.ExecuteNonQuery();
-            con.Close();
+            conn.Close();
             MessageBox.Show(" Successful ");
 
 
@@ -76,6 +76,13 @@ namespace Blood_Bank_Management_System
         {
             lbltime.Text = DateTime.Now.ToLongTimeString();
             lbldate.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Select s = new Select();
+            s.ShowDialog();
         }
     }
 }

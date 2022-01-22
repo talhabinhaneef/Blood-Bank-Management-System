@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Blood_Bank_Management_System
 {
@@ -29,6 +30,32 @@ namespace Blood_Bank_Management_System
             this.Hide();
             Form2 dash = new Form2();
             dash.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            acceptor acc = new acceptor();
+            acc.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Acceptordb DB = new Acceptordb();
+            DB.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f2 = new Form1();
+            f2.ShowDialog();
+        }
+
+        private void btnEXIT_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
