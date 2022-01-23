@@ -1,7 +1,7 @@
 # Blood-Bank-Management-System
  A Simple Blood-Bank-Management-System
  
- A C# Project WIthout DataBase
+ A C# Project WIth SQL  SERVER on AWS Cloud Services
  
  
 # Cridentials
