@@ -13,7 +13,7 @@ namespace Blood_Bank_Management_System
 {
     public partial class regform : Form
     {
-        SqlConnection conn= new SqlConnection(@"SERVER=admin.c8tiwocbpmxj.us-east-1.rds.amazonaws.com; USER ID=admin; PASSWORD=hkAkGmTLNuutqzy8ht6e; DATABASE=BLOODBANK;");
+SqlConnection conn = new SqlConnection(@"SERVER=serverIP; USER ID=Server Username; PASSWORD=server password; DATABASE=database name;");
 
         public regform()
         {
